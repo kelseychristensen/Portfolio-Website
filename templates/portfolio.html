@@ -1,0 +1,27 @@
+{% include "header.html" %}
+
+<!-- Portfolio-->
+
+<main>
+    <div class = "portfolio" id="portfolio">
+        <div class="container">
+    <h1>PROJECTS</h1>
+        <div class="row" id="portrow">
+        <div class="col-lg-4">
+        {% for item in all_items %}
+
+      <p>{{item.title}}</p>
+        </div>
+      <div class="col-lg-8">
+      <div class = "portfolio-image-container">
+            <img class ="port-image" src="{{item.img_url}}">
+      </div>
+          <a class="more" href="{{ url_for('show_item', item_id=item.id) }}">more >></a>
+      </div>
+                    {% endfor %}
+
+      </div>
+</div>
+    </div></main>
+
+{% include "footer.html" %}

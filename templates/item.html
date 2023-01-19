@@ -1,0 +1,36 @@
+{% include "header.html" %}
+
+
+	<div class="container">
+        <div class="portfolio-artifact">
+	<h1>{{item.title}}</h1>
+
+            <div class='row'>
+            <div class="col-lg-6"><img class="item-image" src="{{item.img_url}}"></div>
+            <div class="col-lg-6"  id="descript-col"><p>{{item.description}}</p>
+
+                <div class="links">
+         <div class='row'>
+            <div class="col-lg-6">
+            <a href={{item.github}} target="_blank"><i class="fa-brands fa-github"></i></h2>
+                </a>
+            </div>
+            <div class="col-lg-6">
+            <a href={{item.dribbble}} target="_blank"><i class="fa-brands fa-dribbble"></i>
+                </a>
+            </div>
+        </div>
+          </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+</div></div>
+
+{% include "footer.html" %}
